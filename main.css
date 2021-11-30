@@ -2,32 +2,73 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 100%;
   line-height: 1.5;
 }
 
 body {
-  width: 100%;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   background: url('assets/freedom.jpg') no-repeat center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .wrapper {
   width: 90%;
+  padding-top: 25vh;;
   text-align: center;
   margin: 0 auto;
-  padding-top: 4rem; 
 }
 
 .quote {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2vmax;
 }
 
 .author {
   font-family: 'Crimson Text', serif;
-  font-size: 1.5rem;
+  font-size: 1.5vmax;
   font-style: italic;
 }
 
+footer {
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  font-size: 1.5vmax;
+}
+
+.selected-language {
+  cursor: pointer;
+  color: white;
+}
+
+.lang-menu ul {
+  margin: 0;
+  padding: 0;
+  color: black;
+  display: none;
+}
+
+.lang-menu ul li {
+  list-style: none;
+}
+
+.lang-menu {
+  box-shadow: 0 0 50px black;
+  box-sizing: border-box;
+  font-size: 1.0vmax;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.lang-menu:hover ul {
+  display:block;
+}
